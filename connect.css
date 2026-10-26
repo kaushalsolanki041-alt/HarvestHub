@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+
+.fa-solid, .fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900; 
+    display: inline-block;
+    color: rgb(66, 139, 35); 
+}
+
+
+body{
+    height: 100vh;
+    width: 100wh;
+    background-color: rgb(255, 255, 255);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 10px;
+}
+.navBar, .types, .cate, .boxes{
+    flex-shrink: 0;
+}
+.bckg{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0.3;
+    z-index: -999;
+    position: fixed;
+}
+
+.navBar{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(152, 179, 105, 0.334);
+    gap: 10px;  
+}
+
+.navBar .logo{
+    color: rgb(66, 139, 35); 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-family:  "Gravitas One", serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.navBar .links{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    gap:60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(107, 121, 101);
+    font-size: 20px;
+}
+#one{
+    color: black;
+}
+.linkss{
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 0;
+}
+.arrow{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 85px;
+    transition: all ease-in 0.1s;
+}
+
+.linkss:hover .arrow{
+    margin-top: 75px;
+}
+
+.searchBar{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#but{
+    height: 50%;
+    width: 70%;
+    border-radius: 45px;
+    border: 2px solid #51900e;
+    padding-left:20px;
+    color: #51900e;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+#but:hover{
+    border: 3px solid  #428B23;
+}
+input:focus {
+  outline: none;
+}
+
+.types{
+    width: 100%;
+    height: 30%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.txt{
+   display: flex;
+   height: 40%;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+}
+.txts{
+    color: #88dd2e;
+    font-size: 30px;
+    font-family:"Bungee", sans-serif;
+}
+.txts span{
+    color:rgb(66, 139, 35) ;
+    font-size: 35px;
+}
+#k{
+  font-size: 45px;  
+}
+.explore{
+    font-family: "Dancing Script", cursive  ;
+    font-size: 25px;
+}
+.cate{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.boxes{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.circle{
+    height: 80%;
+    border-radius: 50%;
+    width: 95%;
+    border: 4px solid  #428B23;
+    padding: 2px;
+}
+.circle img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.boxes:hover .circle{
+   border: 4px solid #88DD2E;
+}
+.boxes:hover{
+    font-weight: 800;
+}
+
+.detailed{
+    width: 100%;
+    height: 50%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.names{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 5%;
+    font-family:"Bungee", sans-serif;
+}
+
+.productsContainer{
+    height: 85%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 28px;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+.products:hover{
+    border: 3px solid #88dd2e;
+}
+
+.products{
+    display: flex;
+    background-color: #f7faf2;
+    height: 100%;
+    width: 18%;
+    border-radius: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: start;
+    flex-shrink: 0;
+}
+
+.products .pic{
+    height: 75%;
+    width: 94%;
+    display: flex;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 3px solid #88DD2E;
+}
+.pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.products .pname{
+    height: 15%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+}
+i:hover{
+    font-size: 35px;
+    transition: all ease 0.3s;
+}
+.products .price{
+    margin-top: -5px;
+    height: 8%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #428B23;
+}
+.products .price span{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.help{
+    width: 100%;
+    background-color: rgb(209, 244, 194); 
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    flex-shrink: 0; 
+    gap: 30px;
+    border-top: 2px solid rgba(66, 139, 35, 0.1);
+    height: 35%;
+}
+
+.about {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.about h3{
+    color: rgb(66, 139, 35);
+    font-family: "Gravitas One", serif;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.about h4{
+    color: #428B23;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.about p{
+    color: #6b7965;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.about ul{
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li{
+    margin-bottom: 5px;
+}
+
+.social{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(66, 139, 35);
+}
+

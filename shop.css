@@ -1,0 +1,106 @@
+.shop-cart {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.shop-add {
+  background: none;
+  border: 2px solid #428b23;
+  border-radius: 4px;
+  color: #428b23;
+  font: inherit;
+  line-height: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.shop-manage {
+  margin-left: 16px;
+  border: 1px solid #428b23;
+  border-radius: 5px;
+  padding: 4px 10px;
+  background: #f7faf2;
+  color: #428b23;
+  font: 14px Arial, sans-serif;
+  cursor: pointer;
+}
+.shop-dialog {
+  margin: auto;
+  padding: 24px;
+  width: min(620px, 92vw);
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 2px solid #428b23;
+  border-radius: 16px;
+  background: #f7faf2;
+  color: #263722;
+  font: 16px/1.5 Arial, sans-serif;
+}
+.shop-dialog::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+.shop-heading, .shop-row, .shop-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.shop-heading { margin-bottom: 20px; }
+.shop-row { padding: 14px 0; border-bottom: 1px solid #d5e3cd; flex-wrap: wrap; }
+.shop-quantity { justify-content: flex-start; }
+.shop-form { display: grid; gap: 12px; }
+.shop-field { display: grid; gap: 4px; }
+.shop-field input {
+  width: 100%;
+  border: 1px solid #739b62;
+  border-radius: 6px;
+  padding: 10px;
+  color: #263722;
+  background: white;
+  font: inherit;
+}
+.shop-button {
+  border: 1px solid #428b23;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: #428b23;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+.shop-link {
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #356e1e;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shop-button:disabled { opacity: .5; cursor: default; }
+.shop-dialog button:focus-visible, .shop-field input:focus-visible, .shop-cart:focus-visible, .shop-add:focus-visible, .shop-manage:focus-visible { outline: 2px solid #263722; outline-offset: 3px; }
+.shop-total { margin: 18px 0; font-weight: bold; }
+.shop-empty { padding: 20px 0; font-family: Arial, sans-serif; }
+.shop-subheading { margin-top: 24px; }
+.shop-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90vw;
+  padding: 12px 20px;
+  background: #263722;
+  color: white;
+  border-radius: 8px;
+  font: 15px/1.5 Arial, sans-serif;
+  z-index: 1000;
+}
+.shop-dialog p { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .shop-dialog { padding: 16px; }
+  .shop-heading h2 { font-size: 22px; }
+}
